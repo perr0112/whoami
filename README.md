@@ -1,5 +1,5 @@
-# Code plus ou moins complet du Curriculum Vitae réalisé
+# First Curriculum, with HTML/CSS only
 
-[Lien externe](https://fonts.googleapis.com/css?family=Press+Start+2P), renvoyant vers une ressource utilisée.
+[Lien externe](https://fonts.googleapis.com/css?family=Press+Start+2P), referring to a used ressource.
 
-[Lien externe](https://unpkg.com/nes.css/css/nes.css), renvoyant vers une ressource utilisée.
+[Lien externe](https://unpkg.com/nes.css/css/nes.css), referring to a used ressource.
