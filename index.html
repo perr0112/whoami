@@ -2,44 +2,155 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Curriculum Vitae</title></head>
+		<title>Petit essai CV</title></head>
 		
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 		<link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
 
 
 	<body>
+		<br>
+		<br>
+		<div class="pr">
+			<p style="text-align: center;"><img style="width: 25%"
+			src="pic.jpeg"></p>
+		</div>
+		<br>
 		<div style="margin:10px;">
                 <div class="nes-container with-title">
 		<p class="title" style="text-decoration: underline;">Who i am?</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora earum alias ipsam in nisi, assumenda eligendi vero voluptas ipsa iure illo natus veritatis ea eveniet porro, culpa aperiam possimus.</p>
-		</div><br>
+		<p>I am a <u>young developer</u>, learning programming day by day. Specialized mainly in <span class="id">HTML</span>/<span style="color: green;">CSS</span>, I've become a fan of designing websites or mockups and their realization thanks to programming languages.</p>
+		</div>
+		<br>
 		<div class="nes-container">
 			<ul>
-				<li><a href="mailto:prtclement.ctc@gmail.com">prtclement.ctc@gmail.com</a></li>
-				<li><a href="https://twitter.com/c_heisen">@c_heisen</a></li>
-				<li><a href="https://discord.com/">cl3m#3814</a></li>
-				<li><a href="https://github.com/zowy71">github-zowy71</a></li>
+				<li class="ess2">mail:<a href="mailto:prtclement.ctc@gmail.com">prtclement.ctc@gmail.com</a></li>
+				<li class="ess2">tw:<a href="https://twitter.com/c_heisen">@c_heisen</a></li>
+				<li class="ess2">discord:<a href="https://discord.com/">cl3m#3814</a></li>
+				<li class="ess2">github:<a href="https://github.com/zowy71">zowy71</a></li>
 			</ul>
 		</div><br>
 		<div class="nes-container">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos reprehenderit unde quaerat praesentium quo dolores ut, quos omnis, temporibus illum harum maiores iste dolorum explicabo illo pariatur laboriosam eveniet natus?</p>
 		</div>
 		<br>
-		<div class="nes-container" style="background-color: rgb(255, 176, 176);">
+		<div class="nes-container" style="background-color: rgb(209, 209, 209);">
 		<div class="nes-container" style="background-color: white;">
-		<p>My skills</p>
+		<p><span id="modif">My</span> <span id="modif2">skills</span></p>
 		<ul>
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>SQL</li>
-			<li>Figma Design Conception</li>
+			<div class="skill">
+				<div class="skill-name">html</div>
+				<div class="skill-bar">
+				<div class="skill-per" per="90%" style="max-width:90%"></div>
+			</div>
+			<div class="skill">
+				<div class="skill-name">css</div>
+				<div class="skill-bar">
+				<div class="skill-per" per="75%" style="max-width:75%"></div>
+			</div>
+			<div class="skill">
+				<div class="skill-name">sql</div>
+				<div class="skill-bar">
+				<div class="skill-per" per="60%" style="max-width:60%"></div>
+			</div>
+			<div class="skill">
+				<div class="skill-name">figma conception</div>
+				<div class="skill-bar">
+				<div class="skill-per" per="80%" style="max-width:80%"></div>
+			</div>
+			<br>
+		</ul>
+		<p><span id="modif2">Languages</span> <span id="modif">spoken</span></p>
+		<ul>
+			<div class="skill">
+				<div class="skill-name">english (b1)</div>
+				<div class="skill-bar">
+				<div class="skill-per" per="85%" style="max-width:85%"></div>
+			</div>
+			<div class="skill">
+				<div class="skill-name">spanish (b1/a2)</div>
+				<div class="skill-bar">
+				<div class="skill-per" per="75%" style="max-width:75%"></div>
+			</div>
 		</ul>
 		</div>
 		</div>
 		<p style="text-align: center;
 				  margin-top: 10px;
-				  margin-bottom: 0;
+				  margin-bottom: -2;
 					"><a href="suite.html">2</a></p>
 	</body>
+	<style>
+		img {
+			transition: transform .1s;
+			border-radius: 50%;
+			box-shadow: 0 0 50px rebeccapurple;
+		}
+		img:hover {
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.2);
+			cursor: help;
+			box-shadow:0 0 50px green;
+		}
+		a {
+			color: green;
+		}
+		a:hover {
+			color: rebeccapurple;
+		}
+		#modif:hover {
+			color: red;
+		}
+		#modif2:hover {
+			color: rgb(255, 153, 0);
+		}
+		.id {
+			color: gray;
+		}
+
+		/* levels bars */
+
+		.skills{
+		width: 100%;
+		max-width: 600px;
+		padding: 0 20px;
+		}
+
+		.skill-bar{
+		height: 15px;
+		background: rgb(209, 209, 209);
+		border-radius: 3px;
+		}
+
+		.skill-per{
+		height: 15px;
+		background: rebeccapurple;
+		border-radius: 3px;
+		position: relative;
+		animation: fillBars 2.5s 1;
+		}
+
+		.skill-per:hover {
+			color:red;
+			background: green;
+		}
+
+		.skill-per::before{
+		content: attr(per);
+		position: absolute;
+		padding: 4px 5px;
+		background: #f1f1f1;
+		border-radius: 4px;
+		font-size: 10px;
+		top: -23px;
+		right: 0;
+		transform: translateX(50%);
+		}
+
+		.skill-name {
+			font-size: 13px;
+		}
+
+	</style>
 </html>
