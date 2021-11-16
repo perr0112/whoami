@@ -2,13 +2,19 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Petit essai CV</title></head>
+		<title>My Curriculum</title></head>
 		
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 		<link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
 
 
 	<body>
+		<div class="menu" style="margin-top: 10px;">
+			<p class="inh"><a href="#1">Contacts</a></p>
+			<p class="inh"><a href="#2">Skills</a></p>
+			<p class="inh"><a href="suite.html">Projects</a></p>
+		</div>
+		<hr>
 		<br>
 		<br>
 		<div class="pr">
@@ -18,11 +24,11 @@
 		<br>
 		<div style="margin:10px;">
                 <div class="nes-container with-title">
-		<p class="title" style="text-decoration: underline;">Who i am?</p>
-		<p>I am a <u>young developer</u>, learning programming day by day. Specialized mainly in <span class="id">HTML</span>/<span style="color: green;">CSS</span>, I've become a fan of designing websites or mockups and their realization thanks to programming languages.</p>
+		<p class="title" style="text-decoration: underline;">Who am I?</p>
+		<p>I am a french <u>young developer</u>, learning programming day by day. Specialized mainly in <span class="id">HTML</span>/<span style="color: green;">CSS</span>, I've become a fan of designing websites or mockups and their realization thanks to programming languages.</p>
 		</div>
 		<br>
-		<div class="nes-container">
+		<div class="nes-container" id="1">
 			<ul>
 				<li class="ess2"><a href="mailto:prtclement.ctc@gmail.com">prtclement.ctc@gmail.com</a></li>
 				<li class="ess2">tw:<a href="https://twitter.com/c_heisen">@c_heisen</a></li>
@@ -30,14 +36,19 @@
 				<li class="ess2">github:<a href="https://github.com/zowy71">zowy71</a></li>
 			</ul>
 		</div><br>
-		<div class="nes-container">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos reprehenderit unde quaerat praesentium quo dolores ut, quos omnis, temporibus illum harum maiores iste dolorum explicabo illo pariatur laboriosam eveniet natus?</p>
+		<div class="nes-container with-title" style="background-color: rgb(118, 170, 172, 0.27);">
+			<form method="get" action="essai.jpg" style="display: flex;
+											justify-content: center;
+											align-items: center;"">
+				<span>Take a look on my Curriculum Vitae here: </span>
+				<button type="submit" style="background-color: white; color: green;">Download!</button>
+		    </form>
 		</div>
 		<br>
 		<div class="nes-container" style="background-color: rgb(209, 209, 209);">
 		<div class="nes-container" style="background-color: white;">
 		<p><span id="modif">My</span> <span id="modif2">skills</span></p>
-		<ul>
+		<ul id="2">
 			<div class="skill">
 				<div class="skill-name">html</div>
 				<div class="skill-bar">
@@ -78,9 +89,13 @@
 		<p style="text-align: center;
 				  margin-top: 10px;
 				  margin-bottom: -2;
-					"><a href="suite.html">2</a></p>
+					"><a href="suite.html">Projects</a></p>
 	</body>
+
 	<style>
+
+		/* image hover */
+
 		img {
 			transition: transform .1s;
 			border-radius: 50%;
@@ -98,6 +113,7 @@
 		}
 		a:hover {
 			color: rebeccapurple;
+			text-decoration: none;
 		}
 		#modif:hover {
 			color: red;
@@ -152,5 +168,22 @@
 			font-size: 13px;
 		}
 
+		/* menu style */
+
+		.menu {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+
+		.inh {
+			padding: 20px;
+			text-align: center;
+			background-color: rgba(215, 226, 225, 0.904);
+			margin: 10px 5px;
+		}
+
 	</style>
+
 </html>
